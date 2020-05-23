@@ -1,0 +1,71 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// top
+.top-wrapper{
+  background-image: url("/sunset.jpg");
+  width: 100%;
+  color: white;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.title{
+  padding-top: 300px;
+}
+
+.title h1{
+  font-size: 70px;
+}
+
+.main-message{
+  display: flex;
+  text-align: center;
+}
+
+.main-message img{
+  width: 600px;
+  padding-right: 70px;
+}
+
+.message{
+  width: 600px;
+  text-align: left;
+}
+
+.message a{
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px;
+  float: right;
+  margin-top: 50px;
+}
+
+//about
+
+.abouts{
+  margin-top: 70px;
+}
+
+.about-title h2{
+  border-bottom: 2px solid #333;
+  background-color: rgba(129,129,129,0.5);
+}
+
+.about-detail{
+  display: flex;
+}
+
+.imgpic img{
+  width: 600px;
+  padding-right: 70px;
+}
+
+// footer
+footer{
+  text-align: center;
+  background-color:#333;
+  color: white;
+}

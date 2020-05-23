@@ -1,0 +1,29 @@
+<%= yield%>
+
+<main>
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">編集</h1>
+    <%= form_tag("/posts/#{@post.id}/update") do %>
+      <div class="form">
+        <div class="form-body">
+          <textarea name="content"><%= @post.content %></textarea>
+          <input type="submit" value="保存">
+        </div>
+      </div>
+      
+    <% end %>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <h1>2Fish and 5Breads</h1>
+    <h2>愛知県知多郡美浜町河和</h2>
+    <h2>℡００００００００００</h2>
+    <p>Copywrite @2Fish and 5Breads
+  </footer>
+
+</body>
+</html>

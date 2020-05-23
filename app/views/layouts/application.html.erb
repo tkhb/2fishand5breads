@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TonApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <header>
+    <div class="head-wrapper">
+      <a class="name" href="/">2Fish and 5Breads</a>
+      <ul>
+        <a href="/about"><li>ご案内</li></a>
+        <a href="/sights"><li>周辺情報</li></a>
+        <a href="https://www.airbnb.jp/rooms/34652951?source_impression_id=p3_1589384021_13J9nb6tPotFB6ld&guests=1&adults=1"><li>ご予約</li></a>
+        <a href="/posts/index"><li>お知らせ</li></a>
+        <a href="/access"><li>アクセス</li></a>
+      </ul>
+    </div>
+  </header>
+
+  <% if flash[:notice]%>
+    <div class="flash">
+      <%= flash[:notice]%>
+    </div>
+  <%end%>
+    <%= yield %>
+  </body>
+</html>
